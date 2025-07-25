@@ -44,4 +44,4 @@ class ExtractPDF:
 
         with open(self.output_path, 'w', encoding='utf-8') as f:
             f.write(full_text)
-        print("Written to the folder clean")
+        print("Written to the folder clean/")

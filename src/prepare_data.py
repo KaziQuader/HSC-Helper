@@ -1,12 +1,11 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
 from extract_pdf import ExtractPDF
 from pathlib import Path
-from langchain_huggingface import HuggingFaceEmbeddings
-from langchain.docstore.document import Document
 from qdrant_client import QdrantClient
-from qdrant_client.models import VectorParams, Distance
-from langchain_community.vectorstores import Qdrant
+from qdrant_client.models import VectorParams, Distance, PointStruct
+from sentence_transformers import SentenceTransformer
 import os
+import uuid
 
 def get_text_chunks_from_lines(lines, chunk_size=1024, chunk_overlap=200):
     full_text = "\n".join(lines)
@@ -29,34 +28,27 @@ def data_pipeline(input_path, output_path):
         lines = f.read().splitlines() 
     chunks = get_text_chunks_from_lines(lines)
 
-    documents = [Document(page_content=chunk) for chunk in chunks]
+    embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+    embedding_dim = embedding_model.get_sentence_embedding_dimension()
+    embeddings = embedding_model.encode(chunks)
 
-    for doc in documents[:5]:
-        print(doc)
+    payload = [{"text": chunk} for chunk in chunks]
 
-    embedding_model = HuggingFaceEmbeddings(model_name="sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-
-
-    return documents, embedding_model
+    return payload, embeddings, embedding_dim
 
 def create_vector_db(input_path, output_path, url="http://localhost:6333", collection_name='hsc_helper'):
-    documents, embedding_model = data_pipeline(input_path, output_path)
+    qdrant = QdrantClient(url)
 
-    qdrant = QdrantClient(url=url)
+    payload, embeddings, embedding_dim = data_pipeline(input_path, output_path)
 
     if collection_name not in [col.name for col in qdrant.get_collections().collections]:
         qdrant.recreate_collection(
             collection_name=collection_name,
             vectors_config=VectorParams(
-                size=384,
+                size=embedding_dim,
                 distance=Distance.COSINE
             )
         )
 
-    # # Store in Qdrant
-    # vectorstore = Qdrant.from_documents(
-    #     documents=documents,
-    #     embedding=embedding_model,
-    #     client=qdrant,
-    #     collection_name=collection_name,
-    # )
+    points = [PointStruct(id=str(uuid.uuid4()), vector=embeddings.tolist(), payload=payload) for embeddings, payload in zip(embeddings, payload)]
+    qdrant.upsert(collection_name=collection_name, points=points)
