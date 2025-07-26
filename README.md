@@ -20,7 +20,7 @@ Multilingual RAG System to Answer HSC Bangla Questions
 - If its still missing:
     - cd /opt/homebrew/share/tessdata
     - curl -O https://github.com/tesseract-ocr/tessdata/raw/main/ben.traineddata
-- Set POPPLER_PATH in .env file. (Paths may vary please try to locate)
+- Change the path of tesseract accordingly in extract_pdf.py on line 35 (Paths may vary please try to locate)
 
 ### Windows
 - Download and install Tesseract from:
@@ -35,7 +35,7 @@ Open Command Prompt and run: dir "C:\Program Files\Tesseract-OCR\tessdata" | fin
 - Download and extract Poppler for Windows:
 https://github.com/oschwartz10612/poppler-windows/releases
 - Extract the ZIP file, e.g. to C:/poppler-24.08.0/Library/bin
-- Set POPPLER_PATH in .env file. (Paths may vary please try to locate)
+- Change the path of tesseract accordingly in extract_pdf.py on line 35 (Paths may vary please try to locate)
 
 ### Ubuntu/Linux
 - On your terminal run the following commands:
@@ -47,7 +47,7 @@ https://github.com/oschwartz10612/poppler-windows/releases
 - If ben.traineddata is missing, download manually:
     - cd /usr/share/tesseract-ocr/4.00/tessdata/
     - sudo curl -O https://github.com/tesseract-ocr/tessdata/raw/main/ben.traineddata
-- Set POPPLER_PATH in .env file. (Paths may vary please try to locate)
+- Change the path of tesseract accordingly in extract_pdf.py on line 35 (Paths may vary please try to locate)
 
 ## 5. Setup Qdrant VectorDB
 - Install Docker Desktop

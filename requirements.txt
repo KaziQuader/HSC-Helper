@@ -12,6 +12,10 @@ langchain
 langchain_google_genai
 sentence_transformers
 
+# API
+fastapi
+uvicorn
+
 dotenv
 
 # Other built-in python packages were used. Please install if neccessary.

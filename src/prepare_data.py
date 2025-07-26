@@ -1,9 +1,8 @@
 from langchain.text_splitter import RecursiveCharacterTextSplitter
-from extract_pdf import ExtractPDF
+from src.extract_pdf import ExtractPDF
 from pathlib import Path
 from qdrant_client import QdrantClient
 from qdrant_client.models import VectorParams, Distance, PointStruct
-from sentence_transformers import SentenceTransformer
 import os
 import uuid
 

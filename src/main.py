@@ -1,5 +1,5 @@
 from prepare_data import create_vector_db
-from rag import generate, get_transformed_query
+from rag import generate
 from sentence_transformers import SentenceTransformer
 from langchain_google_genai import ChatGoogleGenerativeAI
 from collections import deque

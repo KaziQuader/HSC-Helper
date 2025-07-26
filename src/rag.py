@@ -1,26 +1,5 @@
-import os
-from qdrant_client import QdrantClient
-from sentence_transformers import SentenceTransformer
-from langchain_google_genai import ChatGoogleGenerativeAI
-from dotenv import load_dotenv
-from prompt_template import generate_prompt_template, transform_query_prompt
-from collections import deque
+from src.prompt_template import generate_prompt_template, transform_query_prompt
 from langchain.output_parsers import StructuredOutputParser, ResponseSchema
-
-# load_dotenv()
-
-# GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
-# os.environ['GOOGLE_API_KEY'] = GOOGLE_API_KEY
-
-# qdrant = QdrantClient("http://localhost:6333")
-# collection_name = 'hsc_helper'
-# embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-# agent = ChatGoogleGenerativeAI(
-#     model='gemini-2.5-pro',
-#     temperature=0.15
-# )
-# short_term_memory = deque(maxlen=2)
-# chat_history = None
 
 def get_transformed_query(user_request, chat_history, agent):
     response_schema = ResponseSchema(name="query", description="The standalone transformed query")
@@ -78,16 +57,6 @@ def generate(user_request, agent, embedding_model, chat_history, memory, qdrant,
 
     # Create the Short Term Memory
     print('Creating Short Term Memory')
-    create_chat_history(memory, user_request, response, chat_history)
-    print(response.content)
-    return response.content
+    chat_history = create_chat_history(memory, user_request, response.content, chat_history)
 
-
-# for i in range(5):
-#     user_request = input('Please Enter Your Query: ')
-#     agent_response = generate(user_request)
-
-
-# user_request = "What was Kalyani's actual age at the time of marriage?"
-
-# generate(user_request, agent, embedding_model, chat_history, short_term_memory, qdrant, collection_name)
+    return response.content, chat_history

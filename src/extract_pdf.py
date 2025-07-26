@@ -3,11 +3,6 @@ import pytesseract
 import re
 import unicodedata
 from dotenv import load_dotenv
-import os
-
-# load_dotenv()
-# tessdata_path = os.getenv('TESSDATA_PREFIX')
-# poppler_path = os.getenv('POPPLER_PATH')
 class ExtractPDF:
     def __init__(self, path, output_path):
         self.path = path
