@@ -64,14 +64,14 @@ https://github.com/oschwartz10612/poppler-windows/releases
 |--------------  |-------------------------------------------|----------------------------------------------|
 | PDF Extraction | PyTesseract                               | pytesseract, pdf2image                       |
 | Chunking       | RecursiveCharacterTextSplitter            | langchain.text_splitter                      |
-| Embedding      | paraphrase-multilingual-MiniLM-L12-v2     | sentence_transformer                         |
+| Embedding      | intfloat/multilingual-e5-base             | sentence_transformer                         |
 | Storage        | Qdrant VectorDB                           | qdrant_client                                |
 | Generation     | Gemini-2.5-pro                            | langchain_google_genai                       |
 
 
 # Sample Queries & Outputs
 ## Bengali
-Query 1: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
+**Query 1: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?**
 
 Answer 1:
 "অপরিচিতা" গল্পে অনুপমের **মামাকে** তার ভাগ্য দেবতা বা 'ভাগ্যদেবতার প্রধান এজেন্ট' বলে উল্লেখ করা হয়েছে।
@@ -140,7 +140,7 @@ Answer 3:
 গল্পের মূল কাহিনি অনুযায়ী, সঠিক উত্তরটি হলো **১৫ বছর**।
 
 ## English
-Query 1: Who has been referred to as Anupam's god of fortune?
+**Query 1: Who has been referred to as Anupam's god of fortune?**
 
 Answer 1:
 Based on the provided context from the story 'Aparichita', **Anupam's Mama (uncle)** has been referred to as the god of fortune.
@@ -268,7 +268,7 @@ Setence Transformer was used as it can understand and compare the semantic conte
 4. Can handle large dataset of documents.
 
 ## How are you comparing the query with your stored chunks? Why did you choose this similarity method and storage setup?
-- Embed the user's query with the same embedding model (paraphrase-multilingual-MiniLM-L12-v2). Query the Qdrant VectorDB using the query embedding  and find the most relavant chunk based on COSINE Similarity.
+- Embed the user's query with the same embedding model (intfloat/multilingual-e5-base). Query the Qdrant VectorDB using the query embedding  and find the most relavant chunk based on COSINE Similarity.
 - COSINE Similarity works great while using Sentence Transformers and is ideal for semantic comparision. It helps in matching meaning between the query and chunks rather than raw word overlap.
 - Qdrant was used as it supports storing metadata along with vectors, has features like payload storage, has a nice set of APIs, and the documentation is well written. Also, it comes with a GUI which can be used to analyse the chunks created.
 
