@@ -7,7 +7,7 @@ from sentence_transformers import SentenceTransformer
 import os
 import uuid
 
-def get_text_chunks_from_lines(lines, chunk_size=1024, chunk_overlap=200):
+def get_text_chunks_from_lines(lines, chunk_size=512, chunk_overlap=64):
     full_text = "\n".join(lines)
 
     print("Started Chunking")
@@ -32,7 +32,7 @@ def data_pipeline(input_path, output_path, embedding_model):
     # embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
     print("Embedding the Chunks")
     embedding_dim = embedding_model.get_sentence_embedding_dimension()
-    embeddings = embedding_model.encode(chunks)
+    embeddings = embedding_model.encode(chunks, normalize_embeddings=True)
 
     payload = [{"text": chunk} for chunk in chunks]
 

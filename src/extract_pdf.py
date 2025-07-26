@@ -37,7 +37,7 @@ class ExtractPDF:
         return text
 
     def extract_text(self):
-        # pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
+        pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
 
         print("Converting Pages to Images")
         pages = convert_from_path(self.path, dpi=600)

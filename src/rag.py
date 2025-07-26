@@ -7,20 +7,20 @@ from prompt_template import generate_prompt_template, transform_query_prompt
 from collections import deque
 from langchain.output_parsers import StructuredOutputParser, ResponseSchema
 
-load_dotenv()
+# load_dotenv()
 
-GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
-os.environ['GOOGLE_API_KEY'] = GOOGLE_API_KEY
+# GOOGLE_API_KEY = os.getenv('GOOGLE_API_KEY')
+# os.environ['GOOGLE_API_KEY'] = GOOGLE_API_KEY
 
-qdrant = QdrantClient("http://localhost:6333")
-collection_name = 'hsc_helper'
-embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
-agent = ChatGoogleGenerativeAI(
-    model='gemini-2.5-pro',
-    temperature=0.15
-)
-short_term_memory = deque(maxlen=2)
-chat_history = None
+# qdrant = QdrantClient("http://localhost:6333")
+# collection_name = 'hsc_helper'
+# embedding_model = SentenceTransformer("sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2")
+# agent = ChatGoogleGenerativeAI(
+#     model='gemini-2.5-pro',
+#     temperature=0.15
+# )
+# short_term_memory = deque(maxlen=2)
+# chat_history = None
 
 def get_transformed_query(user_request, chat_history, agent):
     response_schema = ResponseSchema(name="query", description="The standalone transformed query")
@@ -36,11 +36,11 @@ def get_transformed_query(user_request, chat_history, agent):
     return query
 
 def retrieve(user_request, embedding_model, qdrant, collection_name):
-    query_embedding = embedding_model.encode(user_request)
+    query_embedding = embedding_model.encode(user_request, normalize_embeddings=True)
     results = qdrant.query_points(
         collection_name=collection_name,
         query=query_embedding.tolist(),
-        limit=5,
+        limit=10,
     )
 
     context_chunks = [point.payload["text"] for point in results.points]       
@@ -66,11 +66,11 @@ def generate(user_request, agent, embedding_model, chat_history, memory, qdrant,
 
     # Retrieve Context Chunks from the VectorDB
     print('Retrieving Context')
-    context = retrieve(user_request, embedding_model, qdrant, collection_name)
+    context = retrieve(transformed_request, embedding_model, qdrant, collection_name)
 
     # Generate the Prompt Template
     print('Generating Prompt Template')
-    prompt = generate_prompt_template(user_request, context)
+    prompt = generate_prompt_template(transformed_request, context)
 
     # Invoke Agent to get response
     print('Generating Reponse')
@@ -88,6 +88,6 @@ def generate(user_request, agent, embedding_model, chat_history, memory, qdrant,
 #     agent_response = generate(user_request)
 
 
-user_request = "What was Kalyani's actual age at the time of marriage?"
+# user_request = "What was Kalyani's actual age at the time of marriage?"
 
-generate(user_request, agent, embedding_model, chat_history, short_term_memory, qdrant, collection_name)
+# generate(user_request, agent, embedding_model, chat_history, short_term_memory, qdrant, collection_name)

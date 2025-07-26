@@ -71,64 +71,134 @@ https://github.com/oschwartz10612/poppler-windows/releases
 
 # Sample Queries & Outputs
 ## Bengali
-1. Query: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
+Query 1: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
 
-Answer:
-অপরিচিতা' গল্পে অনুপমের **মামাকে** তার ভাগ্য দেবতা হিসেবে উল্লেখ করা হয়েছে।
+Answer 1:
+"অপরিচিতা" গল্পে অনুপমের **মামাকে** তার ভাগ্য দেবতা বা 'ভাগ্যদেবতার প্রধান এজেন্ট' বলে উল্লেখ করা হয়েছে।
 
 এর কারণ হলো:
 
-*   অনুপমের জীবনের সমস্ত গুরুত্বপূর্ণ সিদ্ধান্ত, যেমন - তার পড়াশোনা, ভবিষ্যৎ এবং বিয়ে, সবকিছুই তার মামা নিয়ন্ত্রণ করতেন।
-*   অনুপম নিজে ছিলেন ব্যক্তিত্বহীন এবং মামার উপর সম্পূর্ণরূপে নির্ভরশীল।
-*   মামার লোভ ও কঠোর সিদ্ধান্তের কারণেই অনুপমের বিয়ে ভেঙে যায়, যা তার জীবনের গতিপথকে সম্পূর্ণ পরিবর্তন করে দেয়। একারণে তিনিই ছিলেন অনুপমের ভাগ্য নিয়ন্ত্রক বা ভাগ্য দেবতা।
+*   **পারিবারিক প্রভাব:** অনুপমের পিতার মৃত্যুর পর তার মামাই পরিবারের কর্তা হয়ে ওঠেন।
+*   **সর্বময় কর্তৃত্ব:** পরিবারে তার প্রভাব এতটাই বেশি ছিল যে, অনুপমের বিয়েসহ জীবনের সকল গুরুত্বপূর্ণ সিদ্ধান্ত তিনিই নিতেন।
+*   **নির্ভরশীলতা:** অনুপম নিজে শিক্ষিত ও প্রাপ্তবয়স্ক হওয়া সত্ত্বেও কোনো সিদ্ধান্ত নেওয়ার ক্ষমতা রাখত না এবং সম্পূর্ণরূপে মামার উপর নির্ভরশীল ছিল।
 
-2. Query: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
+এই নিরঙ্কুশ প্রভাব ও কর্তৃত্বের কারণেই অনুপম তার মামাকে নিজের ভাগ্য নিয়ন্ত্রক বা ভাগ্যদেবতার প্রধান প্রতিনিধি হিসেবে উল্লেখ করেছে।
+"অপরিচিতা" গল্পে অনুপমের **মামাকে** তার ভাগ্য দেবতা বা 'ভাগ্যদেবতার প্রধান এজেন্ট' বলে উল্লেখ করা হয়েছে।
 
-Answer: 
-আপনার জিজ্ঞাসিত তথ্যের জন্য প্রদত্ত কনটেক্সট-এ কোনো উত্তর পাওয়া যায়নি, তবে আমার জানামতে:
+এর কারণ হলো:
 
-'অপরিচিতা' গল্পে কথক **অনুপম** নিজের বর্ণনা দিতে গিয়ে উল্লেখ করেছেন যে, তার বন্ধুরা তাকে সুপুরুষ বলে থাকে।
+*   **পারিবারিক প্রভাব:** অনুপমের পিতার মৃত্যুর পর তার মামাই পরিবারের কর্তা হয়ে ওঠেন।
+*   **সর্বময় কর্তৃত্ব:** পরিবারে তার প্রভাব এতটাই বেশি ছিল যে, অনুপমের বিয়েসহ জীবনের সকল গুরুত্বপূর্ণ সিদ্ধান্ত তিনিই নিতেন।
+*   **নির্ভরশীলতা:** অনুপম নিজে শিক্ষিত ও প্রাপ্তবয়স্ক হওয়া সত্ত্বেও কোনো সিদ্ধান্ত নেওয়ার ক্ষমতা রাখত না এবং সম্পূর্ণরূপে মামার উপর নির্ভরশীল ছিল।
 
-**গল্পের বর্ণনানুসারে, অনুপম বলেন: "আমার চেহারা মন্দ নয়। **বন্ধুরা আমাকে সুপুরুষ বলেই থাকে**।"
+এই নিরঙ্কুশ প্রভাব ও কর্তৃত্বের কারণেই অনুপম তার মামাকে নিজের ভাগ্য নিয়ন্ত্রক বা ভাগ্যদেবতার প্রধান 
 
-সুতরাং, অনুপমের ভাষায় **তাকে নিজেই** সুপুরুষ বলা হয়েছে, যা তার বন্ধুদের অভিমত।
+Query 2: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
 
-3. Query: বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?
+Answer 2: 
+'অপরিচিতা' গল্পে অনুপমের ভাষায় তার বন্ধু **হরিশকে** সুপুরুষ বলা হয়েছে।
 
-Answer:
-রবীন্দ্রনাথ ঠাকুরের 'অপরিচিতা' গল্প অনুসারে, বিয়ের সময় কল্যাণীর প্রকৃত বয়স ছিল **পনেরো (১৫) বছর**।
+গল্পের বর্ণনানুসারে, অনুপম তার বন্ধু হরিশ সম্পর্কে বলেছে:
+
+*   **"হরিশ কানপুরে কাজ করে। সে আমার চেয়ে দুই ক্লাসের উপরের ছাত্র ছিল। ছেলেটি ভারী রসিক, আসর জমাতে অদ্বিতীয় এবং handsome যাকে বলে, অর্থাৎ **সুপুরুষ** বটে।"**
+*   হরিশকে একজন রসিক এবং আড্ডায় আসর জমাতে পারদর্শী হিসেবে বর্ণনা করা হয়েছে।
+*   মূলত হরিশই কল্যাণীর সম্বন্ধটি অনুপমের পরিবারের কাছে নিয়ে আসে।
+'অপরিচিতা' গল্পে অনুপমের ভাষায় তার বন্ধু **হরিশকে** সুপুরুষ বলা হয়েছে।
+
+গল্পের বর্ণনানুসারে, অনুপম তার বন্ধু হরিশ সম্পর্কে বলেছে:
+
+*   **"হরিশ কানপুরে কাজ করে। সে আমার চেয়ে দুই ক্লাসের উপরের ছাত্র ছিল। ছেলেটি ভারী রসিক, আসর জমাতে অদ্বিতীয় এবং handsome যাকে বলে, অর্থাৎ **সুপুরুষ** বটে।"**
+*   হরিশকে একজন রসিক এবং আড্ডায় আসর জমাতে পারদর্শী হিসেবে বর্ণনা করা হয়েছে।
+*   মূলত হরিশই কল্যাণীর সম্বন্ধটি অনুপমের পরিবারের কাছে নিয়ে আসে।
+
+Query 3: বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?
+
+Answer 3:
+'অপরিচিতা' গল্প অনুসারে, বিয়ের সময় কল্যাণীর প্রকৃত বয়স ছিল **১৫ বছর**।
+
+প্রদত্ত তথ্যে এই সম্পর্কিত একটি বহুনির্বাচনি প্রশ্নও উল্লেখ করা হয়েছে:
+
+*   **প্রশ্ন ৫৪:** বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?
+    *   (ক) ১৪ বছর
+    *   **(খ) ১৫ বছর**
+    *   (গ) ১৬ বছর
+    *   (ঘ) ১৭/১৮ বছর
+
+গল্পের মূল কাহিনি অনুযায়ী, সঠিক উত্তরটি হলো **১৫ বছর**।
+'অপরিচিতা' গল্প অনুসারে, বিয়ের সময় কল্যাণীর প্রকৃত বয়স ছিল **১৫ বছর**।
+
+প্রদত্ত তথ্যে এই সম্পর্কিত একটি বহুনির্বাচনি প্রশ্নও উল্লেখ করা হয়েছে:
+
+*   **প্রশ্ন ৫৪:** বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?
+    *   (ক) ১৪ বছর
+    *   **(খ) ১৫ বছর**
+    *   (গ) ১৬ বছর
+    *   (ঘ) ১৭/১৮ বছর
+
+গল্পের মূল কাহিনি অনুযায়ী, সঠিক উত্তরটি হলো **১৫ বছর**।
+
 
 ## English
-1. Query: Who has been referred to as Anupam's god of fortune?
+Query 1: Who has been referred to as Anupam's god of fortune?
 
-Answer:
-Based on the story 'Aparichita' (অপরিচিতা), to which the context refers, Anupam's maternal uncle (**মামা**) is considered his god of fortune.
+Answer 1:
+Based on the provided context from the story 'Aparichita', **Anupam's Mama (uncle)** has been referred to as the god of fortune.
 
-Here's a more detailed explanation:
+Here are the specific points from the text that support this:
 
-*   **Absolute Authority:** Anupam's uncle was the sole guardian and decision-maker in his life after his father's death. He controlled every aspect of Anupam's world, from his education to his marriage.
-*   **Anupam's Dependence:** Anupam was a timid and indecisive character who completely relied on his uncle's judgment. He saw his uncle as the ultimate authority who shaped his destiny, thus referring to him as his "god of fortune" or the arbiter of his fate.
+*   A multiple-choice question directly asks: "কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?" (Who has been referred to as Anupam's god of fortune?), with **মামা (Mama)** as an option.
+*   He is also described as the **"chief agent" (প্রধান এজেন্ট) of the god of fortune** because of the significant **influence (প্রভাব)** he had over Anupam's life and family.
+Based on the provided context from the story 'Aparichita', **Anupam's Mama (uncle)** has been referred to as the god of fortune.
 
-2. Query: According to Anupam, who is referred to as a noble/good man?
+Here are the specific points from the text that support this:
 
-Answer:
-Based on the provided context, the person who acts as a noble and good man is **Shambhunath Sen**, Kalyani's father.
+*   A multiple-choice question directly asks: "কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?" (Who has been referred to as Anupam's god of fortune?), with **মামা (Mama)** as an option.
+*   He is also described as the **"chief agent" (প্রধান এজেন্ট) of the god of fortune** because of the significant **influence (প্রভাব)** he had over Anupam's life and family.
 
-Here's why:
 
-*   **Principled Stand:** He refuses to give his daughter in marriage to Anupam, whom he considers a "personality-less boy" (`ব্যক্তিত্বহীন ছেলের কাছে`).
-*   **Dignity over Ceremony:** Despite the wedding arrangements being complete, Shambhunath Sen prioritizes his daughter's and his family's dignity over the ceremony after they are insulted by Anupam's uncle.
-*   **Protest against Injustice:** His decision to call off the wedding is a direct protest against the greed and humiliation shown by Anupam's family, establishing him as a man of strong character and values.
+Query 2: According to Anupam, who is referred to as a noble/good man?
 
-3. Query: What was Kalyani's actual age at the time of marriage?
+Answer 2:
+Based on the provided text, **Anupam refers to himself** as a noble/good man (সৎপাত্র).
 
-Answer: 
-Based on the story "Aparichita" (অপরিচিতা), from which the context is taken, Kalyani's age at the time the marriage was arranged was **fifteen (১৫)**.
+He justifies this by stating:
+*   Any father of a daughter would consider him a suitable groom (**সৎপাত্র**).
+*   He doesn't even smoke tobacco ("তামাকটুকু পর্যন্ত খাই না").
+*   He considers himself an "utterly good man" (**নিতান্ত ভালোমানুষ**) because there is no trouble or effort involved in being one.
+*   He is obedient to his mother's commands.
+Based on the provided text, **Anupam refers to himself** as a noble/good man (সৎপাত্র).
 
-While the provided text does not explicitly state her age at the time of the wedding, it does include a related question:
+He justifies this by stating:
+*   Any father of a daughter would consider him a suitable groom (**সৎপাত্র**).
+*   He doesn't even smoke tobacco ("তামাকটুকু পর্যন্ত খাই না").
+*   He considers himself an "utterly good man" (**নিতান্ত ভালোমানুষ**) because there is no trouble or effort involved in being one.
+*   He is obedient to his mother's commands.
 
-**Question 41:** "ট্রেনে দেখা হওয়ার সময় কল্যাণীর বয়স কত ছিল?" (What was Kalyani's age when they met on the train?)
-**The options provided are 14/15, 15/16, and 16/17 years. This meeting on the train happened sometime after the failed marriage ceremony.**
+
+Query 3: What was Kalyani's actual age at the time of marriage?
+
+Answer 3: 
+Based on the provided context, here is the information regarding Kalyani's age at the time of marriage.
+
+According to a multiple-choice question found in the context, Kalyani's actual age at the time of marriage was **15 years**.
+
+The specific question (number 54) from the text is:
+*   **"বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?"** (What was Kalyani's actual age at the time of marriage?)
+    *   (ক) ১৪ বছর (14 years)
+    *   **(খ) ১৫ বছর (15 years)**
+    *   (গ) ১৬ বছর (16 years)
+    *   (ঘ) ১৭/১৮ বছর (17/18 years)
+Based on the provided context, here is the information regarding Kalyani's age at the time of marriage.
+
+According to a multiple-choice question found in the context, Kalyani's actual age at the time of marriage was **15 years**.
+
+The specific question (number 54) from the text is:
+*   **"বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?"** (What was Kalyani's actual age at the time of marriage?)
+    *   (ক) ১৪ বছর (14 years)
+    *   **(খ) ১৫ বছর (15 years)**
+    *   (গ) ১৬ বছর (16 years)
+    *   (ঘ) ১৭/১৮ বছর (17/18 years)
+
 
 # Project Related Questions
 ## What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
@@ -146,7 +216,7 @@ It works well because:
 5. All of the above helps to produce better embeddings for vector search.
 
 ## What embedding model did you use? Why did you choose it? How does it capture the meaning of the text?
-Setence Transformer was used as it can understand and compare the semantic content of sentences. Hugging face's paraphrase-multilingual-MiniLM-L12-v2 model was used because it can handle various languages including bengali. Apart from that some more reasons are:
+Setence Transformer was used as it can understand and compare the semantic content of sentences. Hugging face's intfloat/multilingual-e5-base model was used because it can handle various languages including bengali. Apart from that some more reasons are:
 1. Captures semantic meaning which helps to match the user's query to relevant documents/chunks in our vectorDB.
 2. Does not rely on keyword-based searching. This means that the retriever in our RAG can retrieve documents that are sementacilly relevant to the query, even if key-word do not match.
 3. The RAG model can understand context of both the query and the documents retrieved. This generates better context-aware output.
@@ -162,7 +232,9 @@ Setence Transformer was used as it can understand and compare the semantic conte
 - Implemented a short-term memory by preserving the last five chats. The chats create a chat history which is used along with a prompt template to transform the query. Thus, even if the query is vague or missing context the model will use the chat history to understand the user's query.
 
 ## Do the results seem relevant? If not, what might improve them (e.g. better chunking, better embedding model, larger document)?
-Till now all qeuries generated relavant results.
+Trying the sample questions that were given in the documents generated 2 right answers out of 3.
+Better extraction method and cleaning of the extracted text will lead to better result.
+Even though the extraction is not optimum the model is able to give answers with explanations.
 
 # References:
 1. https://www.anyscale.com/blog/a-comprehensive-guide-for-building-rag-based-llm-applications-part-1?curius=1144#vector-db-creation
