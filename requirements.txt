@@ -1,3 +1,14 @@
+# PDF Extraction Libraries
 pymupdf
 pdf2image
 pytesseract
+
+# Vector DB
+qdrant_client
+
+# Model and Orchestrator
+langchain
+langchain_google_genai
+sentence_transformers
+
+# Other built-in python packages were used. Please install if neccessary.

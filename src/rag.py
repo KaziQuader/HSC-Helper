@@ -1,9 +1,8 @@
+import os
 from qdrant_client import QdrantClient
 from sentence_transformers import SentenceTransformer
 from langchain_google_genai import ChatGoogleGenerativeAI
 from dotenv import load_dotenv
-import os
-import json
 from prompt_template import generate_prompt_template, transform_query_prompt
 from collections import deque
 from langchain.output_parsers import StructuredOutputParser, ResponseSchema
