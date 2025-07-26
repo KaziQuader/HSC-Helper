@@ -93,6 +93,7 @@ Answer 1:
 
 এই নিরঙ্কুশ প্রভাব ও কর্তৃত্বের কারণেই অনুপম তার মামাকে নিজের ভাগ্য নিয়ন্ত্রক বা ভাগ্যদেবতার প্রধান 
 
+---
 Query 2: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
 
 Answer 2: 
@@ -111,6 +112,7 @@ Answer 2:
 *   হরিশকে একজন রসিক এবং আড্ডায় আসর জমাতে পারদর্শী হিসেবে বর্ণনা করা হয়েছে।
 *   মূলত হরিশই কল্যাণীর সম্বন্ধটি অনুপমের পরিবারের কাছে নিয়ে আসে।
 
+---
 Query 3: বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?
 
 Answer 3:
@@ -137,7 +139,6 @@ Answer 3:
 
 গল্পের মূল কাহিনি অনুযায়ী, সঠিক উত্তরটি হলো **১৫ বছর**।
 
-
 ## English
 Query 1: Who has been referred to as Anupam's god of fortune?
 
@@ -155,7 +156,7 @@ Here are the specific points from the text that support this:
 *   A multiple-choice question directly asks: "কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?" (Who has been referred to as Anupam's god of fortune?), with **মামা (Mama)** as an option.
 *   He is also described as the **"chief agent" (প্রধান এজেন্ট) of the god of fortune** because of the significant **influence (প্রভাব)** he had over Anupam's life and family.
 
-
+---
 Query 2: According to Anupam, who is referred to as a noble/good man?
 
 Answer 2:
@@ -174,7 +175,7 @@ He justifies this by stating:
 *   He considers himself an "utterly good man" (**নিতান্ত ভালোমানুষ**) because there is no trouble or effort involved in being one.
 *   He is obedient to his mother's commands.
 
-
+---
 Query 3: What was Kalyani's actual age at the time of marriage?
 
 Answer 3: 
@@ -212,6 +213,37 @@ The specific question (number 54) from the text is:
         "query": "অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?"
         }
 7. You will get a response that will include session_id, query, response, memory, and chat_history
+
+# Evaluation
+Evaluation Dataset Used
+<pre lang="markdown">
+    { 
+        "query": "বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?",
+        "expected_context_keywords": ["কল্যাণী", "বয়স", "বিয়ে"],
+        "expected_answer": "পনেরো"
+    },
+    {
+        "query": "অনুপমের বাবার পেশা কী ছিল?",
+        "expected_context_keywords": ["অনুপম", "বাবা", "ওকালতি"],
+        "expected_answer": "ওকালতি"
+    },
+    {
+        'query': "কল্যানীর বাবার নাম কী ছিল?",
+        'expected_context_keywords': ["কল্যাণী","বাবা", "নাম"],
+        'expected_answer': "শম্ভুনাথ বাবু"
+    },
+    {
+        'query': "অপরিচিতা গল্পে কল্যানীর বিয়ে না হওয়ার কারন কী ছিল?",
+        'expected_context_keywords': ["কল্যাণী", "না", "বিয়ে"],
+        'expected_answer': "আত্মমর্যাদা"
+    } </pre>
+
+Three types of evaluation were used (Run evaluation.py to see the results):
+1. Retrieval Relevance: For a query some context keyword are specified. We compare our retrieved context from the vectorDB with the expected context keywords. After running this test, all the retrieved context had the expected context keywords. (100%)
+
+2. Groundedness: Chekced if the expected answer is present anywhere in the llm agent's response. Two of the query had the expected answer in the response and two did not. I believe that extracting pdf in a better way will surely increase this metric.
+
+3. Cosine Similarity: For each of the query and the chunks from the context embeddings were generated. Then compared the consine similarity between the query embeddings and chunks embeddings. The average cosine similarity of the four query came out 83.13% which is quite good.
 
 # Project Related Questions
 ## What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
