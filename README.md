@@ -71,7 +71,7 @@ https://github.com/oschwartz10612/poppler-windows/releases
 
 # Sample Queries & Outputs
 ## Bengali
-**Query 1: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?**
+Query 1: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
 
 Answer 1:
 "অপরিচিতা" গল্পে অনুপমের **মামাকে** তার ভাগ্য দেবতা বা 'ভাগ্যদেবতার প্রধান এজেন্ট' বলে উল্লেখ করা হয়েছে।
@@ -140,7 +140,7 @@ Answer 3:
 গল্পের মূল কাহিনি অনুযায়ী, সঠিক উত্তরটি হলো **১৫ বছর**।
 
 ## English
-**Query 1: Who has been referred to as Anupam's god of fortune?**
+Query 1: Who has been referred to as Anupam's god of fortune?
 
 Answer 1:
 Based on the provided context from the story 'Aparichita', **Anupam's Mama (uncle)** has been referred to as the god of fortune.
