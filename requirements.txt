@@ -12,4 +12,6 @@ langchain
 langchain_google_genai
 sentence_transformers
 
+dotenv
+
 # Other built-in python packages were used. Please install if neccessary.

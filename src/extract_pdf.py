@@ -2,6 +2,12 @@ from pdf2image import convert_from_path
 import pytesseract
 import re
 import unicodedata
+from dotenv import load_dotenv
+import os
+
+# load_dotenv()
+# tessdata_path = os.getenv('TESSDATA_PREFIX')
+# poppler_path = os.getenv('POPPLER_PATH')
 class ExtractPDF:
     def __init__(self, path, output_path):
         self.path = path
@@ -31,12 +37,13 @@ class ExtractPDF:
         return text
 
     def extract_text(self):
-        pytesseract.pytesseract.tesseract_cmd = "/opt/homebrew/bin/tesseract"
+        # pytesseract.pytesseract.tesseract_cmd = '/opt/homebrew/bin/tesseract'
 
-        pages = convert_from_path(self.path, dpi=600, poppler_path="/opt/homebrew/bin")
+        print("Converting Pages to Images")
+        pages = convert_from_path(self.path, dpi=600)
         full_text = ''
 
-        print("Extracting")
+        print("Extracting Text from Images")
         for i, page in enumerate(pages):
             text = pytesseract.image_to_string(page, lang="ben")
             text = self.clean_text(text)
