@@ -71,7 +71,7 @@ https://github.com/oschwartz10612/poppler-windows/releases
 
 # Sample Queries & Outputs
 ## Bengali
-Query 1: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?
+**Query 1: কাকে অনুপমের ভাগ্য দেবতা বলে উল্লেখ করা হয়েছে?**
 
 Answer 1:
 "অপরিচিতা" গল্পে অনুপমের **মামাকে** তার ভাগ্য দেবতা বা 'ভাগ্যদেবতার প্রধান এজেন্ট' বলে উল্লেখ করা হয়েছে।
@@ -93,7 +93,7 @@ Answer 1:
 
 এই নিরঙ্কুশ প্রভাব ও কর্তৃত্বের কারণেই অনুপম তার মামাকে নিজের ভাগ্য নিয়ন্ত্রক বা ভাগ্যদেবতার প্রধান 
 
-Query 2: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?
+**Query 2: অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?**
 
 Answer 2: 
 'অপরিচিতা' গল্পে অনুপমের ভাষায় তার বন্ধু **হরিশকে** সুপুরুষ বলা হয়েছে।
@@ -111,7 +111,7 @@ Answer 2:
 *   হরিশকে একজন রসিক এবং আড্ডায় আসর জমাতে পারদর্শী হিসেবে বর্ণনা করা হয়েছে।
 *   মূলত হরিশই কল্যাণীর সম্বন্ধটি অনুপমের পরিবারের কাছে নিয়ে আসে।
 
-Query 3: বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?
+**Query 3: বিয়ের সময় কল্যাণীর প্রকৃত বয়স কত ছিল?**
 
 Answer 3:
 'অপরিচিতা' গল্প অনুসারে, বিয়ের সময় কল্যাণীর প্রকৃত বয়স ছিল **১৫ বছর**।
@@ -139,7 +139,7 @@ Answer 3:
 
 
 ## English
-Query 1: Who has been referred to as Anupam's god of fortune?
+**Query 1: Who has been referred to as Anupam's god of fortune?**
 
 Answer 1:
 Based on the provided context from the story 'Aparichita', **Anupam's Mama (uncle)** has been referred to as the god of fortune.
@@ -156,7 +156,7 @@ Here are the specific points from the text that support this:
 *   He is also described as the **"chief agent" (প্রধান এজেন্ট) of the god of fortune** because of the significant **influence (প্রভাব)** he had over Anupam's life and family.
 
 
-Query 2: According to Anupam, who is referred to as a noble/good man?
+**Query 2: According to Anupam, who is referred to as a noble/good man?**
 
 Answer 2:
 Based on the provided text, **Anupam refers to himself** as a noble/good man (সৎপাত্র).
@@ -175,7 +175,7 @@ He justifies this by stating:
 *   He is obedient to his mother's commands.
 
 
-Query 3: What was Kalyani's actual age at the time of marriage?
+**Query 3: What was Kalyani's actual age at the time of marriage?**
 
 Answer 3: 
 Based on the provided context, here is the information regarding Kalyani's age at the time of marriage.
