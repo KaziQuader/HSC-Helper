@@ -2,6 +2,7 @@
 pymupdf
 pdf2image
 pytesseract
+Pillow
 
 # Vector DB
 qdrant_client
