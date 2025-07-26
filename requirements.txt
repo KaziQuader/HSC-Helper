@@ -15,6 +15,7 @@ sentence_transformers
 # API
 fastapi
 uvicorn
+pydantic
 
 dotenv
 

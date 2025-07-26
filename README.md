@@ -200,6 +200,19 @@ The specific question (number 54) from the text is:
     *   (ঘ) ১৭/১৮ বছর (17/18 years)
 
 
+# API Documentation
+1. Open Terminal and cd to the root directory of the project (api.py stays)
+2. run: uvicorn api:app --reload 
+3. Open Postman, create a collection, add a new request.
+4. Make sure the method is POST, Header has key as Content-type and value as application/json.
+5. Go to the Body tab, select raw and add your json request.
+6. Example json request: 
+    - {
+        "session_id": "user123",
+        "query": "অনুপমের ভাষায় সুপুরুষ কাকে বলা হয়েছে?"
+        }
+7. You will get a response that will include session_id, query, response, memory, and chat_history
+
 # Project Related Questions
 ## What method or library did you use to extract the text, and why? Did you face any formatting challenges with the PDF content?
 - Initially pymupdf, pdfmine, and pdfplumber were used. However, copy-pasting some texts from the pdf generated gibberish. Due to the fact that the pdf was converted from powerpoint slides to pdf the encoding for the language was different. As a result, pdf2image and pytesserect were used, which uses OCR to extract text.
@@ -233,7 +246,15 @@ Setence Transformer was used as it can understand and compare the semantic conte
 
 ## Do the results seem relevant? If not, what might improve them (e.g. better chunking, better embedding model, larger document)?
 Trying the sample questions that were given in the documents generated 2 right answers out of 3.
-Better extraction method and cleaning of the extracted text will lead to better result.
+Ways to improve:
+1. Better extraction method and cleaning of the extracted text will lead to better results. (Main Pain Point I faced)
+2. Trying semantic chunking rather than recursive chunking.
+3. Using bigger and better embedding model. (Not Cost Effecient / Time Effecient)
+4. While storing the embedding in the vector database, adding metadata such as what type of text it is. E.g passage, author information, word meaning, questions, mcq, etc.
+5. Generating better prompt template.
+6. Using an LLM model that is specifically trained on bengali language.
+7. Perform techniques such as Retriever Ensembling and Reranking.
+As this is a simple project, improvements can be made at every aspect. Thus, there are more techniques that I can write over here.
 Even though the extraction is not optimum the model is able to give answers with explanations.
 
 # References:
