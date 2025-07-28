@@ -204,7 +204,7 @@ The specific question (number 54) from the text is:
 # API Documentation
 1. Open Terminal and cd to the root directory of the project (api.py stays)
 2. run: uvicorn api:app --reload 
-3. Open Postman, create a collection, add a new request.
+3. Open Postman, create a collection, add a new request. Add the path: http://127.0.0.1:8000/generate
 4. Make sure the method is POST, Header has key as Content-type and value as application/json.
 5. Go to the Body tab, select raw and add your json request.
 6. Example json request: 
